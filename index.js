@@ -3,7 +3,7 @@ const express = require('express');
 const cors = require('cors');
 var jwt = require('jsonwebtoken');
 require('dotenv').config();
-const stripe = require('stripe')('sk_test_51L19j3JpfOx2cnrFx4oLeFW8e4Db4zwCING9yF5NgLibHQDrVniisKpacG5Q97ub71g0HwS69i4kHMT1s3fAMDCc00ZLhcBjxu');
+const stripe = require('stripe'); ('sk_test_51L19j3JpfOx2cnrFx4oLeFW8e4Db4zwCING9yF5NgLibHQDrVniisKpacG5Q97ub71g0HwS69i4kHMT1s3fAMDCc00ZLhcBjxu');
 const nodemailer = require('nodemailer');
 
 const app = express();
