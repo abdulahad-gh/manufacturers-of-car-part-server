@@ -12,8 +12,6 @@ const port = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
-
-
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
@@ -192,9 +190,6 @@ async function run() {
             const updatedBooking = await orderCollection.updateOne(filter, updatedDoc);
             res.send(updatedBooking);
         })
-
-
-
 
         //get api for single order of part
         app.get('/order/:orderId', verifyJwt, async (req, res) => {
