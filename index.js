@@ -329,7 +329,7 @@ run().catch(console.dir)
 app.get('/', (req, res) => {
     res.send('manufacturers server ok')
 })
-app.get('*',(req,res)=>{
+app.get('/*',(req,res)=>{
     res.send("this api url is not asset of this app")
 })
 app.listen(port, () => {
