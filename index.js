@@ -107,6 +107,7 @@ async function run() {
         // get all parts api
         app.get('/parts', verifyJwt, async (req, res) => {
             const parts = await partCollection.find().toArray();
+            console.log('hellllo')
             res.send(parts)
         })
 
